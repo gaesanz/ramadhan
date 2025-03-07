@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>RAMADHAN EVENT 1446 H</title>
+</head>
+<body>
+    <img src="NUSA_RARA.png" alt="Nusa Rara" class="logo">
+    
+    <div class="container">
+        <h2>RAMADHAN EVENT 1446 H</h2>
+        
+        <div class="header-image">
+            <img src="RAMADHAN.jpeg" alt="Ramadhan Kareem" id="header-img">
+        </div>
+        
+        <h3>Ngadu Winrate Ramadhan Bang</h3>
+        <table>
+            <tr>
+                <th>STATISTIK</th>
+                <th>INPUT</th>
+            </tr>
+            <tr>
+                <td>Number of Fasts:</td>
+                <td><input type="number" id="fasts" min="0" max="30" placeholder="0-30 days"></td>
+            </tr>
+            <tr>
+                <td>Number of Tarawih:</td>
+                <td><input type="number" id="terawih" min="0" max="30" placeholder="0-30 nights"></td>
+            </tr>
+            <tr>
+                <td>Dzuhur Prayers:</td>
+                <td><input type="number" id="noon" min="0" max="30" placeholder="Total Dzuhur completed"></td>
+            </tr>
+            <tr>
+                <td>Asar Prayers:</td>
+                <td><input type="number" id="asar" min="0" max="30" placeholder="Total Asar completed"></td>
+            </tr>
+            <tr>
+                <td>Maghrib Prayers:</td>
+                <td><input type="number" id="sunset" min="0" max="30" placeholder="Total Maghrib completed"></td>
+            </tr>
+            <tr>
+                <td>Isya Prayers:</td>
+                <td><input type="number" id="isha" min="0" max="30" placeholder="Total Isya completed"></td>
+            </tr>
+            <tr>
+                <td>Subuh Prayers:</td>
+                <td><input type="number" id="dawn" min="0" max="30" placeholder="Total Subuh completed"></td>
+            </tr>
+        </table>
+        
+        <button onclick="calculateWinrate()">Calculate Progress</button>
+        
+        <div id="results" class="result-container" style="display: none;">
+            <h3>Your Ramadhan Progress</h3>
+            
+            <div class="result-card">
+                <div class="result-title">Puasa Progress</div>
+                <div class="result-value" id="fastingResult">0%</div>
+            </div>
+            
+            <div class="result-card">
+                <div class="result-title">Tarawih Progress</div>
+                <div class="result-value" id="terawihResult">0%</div>
+            </div>
+            
+            <div class="result-card">
+                <div class="result-title">Daily Prayers Progress</div>
+                <div class="result-value" id="worshipResult">0%</div>
+            </div>
+            
+            <div id="message" class="progress-section"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Ramadhan Event 1446 H - May Allah accept all our acts of worship</p>
+    </div>
+</body>
+</html>
